@@ -1,0 +1,151 @@
+<!--
+ * Created by Jayant Bramhankar (www.sahyadritechnologies.com)
+ * Youtube Channel - https://www.youtube.com/channel/UCPSeFaxM6ni_HGpfkb3Kwbw;
+ * License - Free to use -->
+<!DOCTYPE html>
+<html>
+<head>
+	<head>
+
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, width=device-width">
+
+		<title>Home</title>
+		<link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.min.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" href="css/owl.carousel.min.css">
+		<script type="application/javascript" src="js/job.js">
+
+		</script>
+	</head>
+</head>
+<body>
+<div class="container">
+
+	<div class="app">
+		<div class="menushape1"></div>
+		<div class="menushape2"></div>
+		<ul class="menubar">
+			<li><a class="active"  href="javascript:void(0)" onclick="openNav()"><i class="fas fa-bars"></i></a></li>
+			<li><a href="#"><i class="fas fa-home"></i></a></li>
+			<li><a href="#"><i class="fas fa-ellipsis-v"></i></a></li>
+		</ul>
+
+		<div class="sidenav" id="sidenav">
+			<div class="sidenavshape"></div>
+			<div class="profile">
+				<img src="img/avtar.png" alt="avtar">
+				<h5><span style="color: red; "> Sudhir Kumar</span></h5>
+				<p style="text-decoration-color: red">Gardener/Painter</p>
+			</div>
+			<div class="clearfix"></div>
+			<ul>
+				<li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times"></i></a></li>
+				<li><a href="">Profile</a></li>
+				<li class="active"><a href="">About</a></li>
+				<li><a href="">Experience</a></li>
+				<li><a href="">Contact</a></li>
+				<li><a href=""><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+			</ul>
+		</div>
+		<!-- Home page starts here -->
+		<div class="row">
+			<div class="col-12">
+				<div class="owl-carousel">
+					<div class="item" data-merge="7">
+						<img src="img/backgroundImage.png" alt="quick">
+						<marquee direction="right" behavior="alternate" style="background:lightgoldenrodyellow;background-image: url('img/quickCashLogo.png')" >
+							<b style="color: red">Welcome to Quick Cash</b>
+						</marquee>
+					</div>
+				</div>
+				<div class="news">
+					<h2><span>Jobs</span></h2>
+						<embed type="text/html" src="product.html" width="1500" height="1500">
+<!--							<div data-role="popup" id="popupUpdateDelete">
+								<div data-role="header">
+									<a class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all" data-rel="back"></a>
+									<h1>Options</h1>
+								</div>
+								<div data-role="main" class="ui-content">
+									<a class="ui-btn ui-icon-delete ui-btn-icon-left ui-btn-inline"
+									   onclick="deleteProduct()"
+									>Delete</a>
+									<a class="ui-btn ui-icon-edit ui-btn-icon-left ui-btn-inline"
+									   href="#updatedialog"
+									>Update</a>
+								</div>
+							</div>-->
+						</div>
+					</div>
+<!--					<ul>
+						<li>
+						<div class="row news-item">
+							<img src="img/gardening.jpg" alt="">
+							<div class="news-desc">
+								<h4>Gardener Needed!!</h4>
+								<p>need someone to plant 2 plants in my garden. Please contact me!</p>
+							</div>
+							<div class="social">
+								<input type="image" class="text-success" onclick="ShowDetails(1); return false;"
+									   value="show details" alt="show details">
+								<br>
+								<a href="" class="text-info"><i class="fas fa-share"></i></a>
+								<br>
+								<a href="" class="text-secondary"><i class="fas fa-comment"></i></a>
+							</div>
+						</div>
+						</li>
+					</ul>-->
+					<div>
+						<img src="" alt="" class="col-2">
+						<div class="col-10">
+							<h4></h4>
+							<p></p>
+						</div>
+					</div>
+					<div>
+						<img src="" alt="" class="col-2">
+						<div class="col-10">
+							<h4></h4>
+							<p></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> <!-- app close -->
+</div> <!-- container close -->
+<!--Product Details page -->
+<div data-role="page" data-theme="a" id="showDetails">
+	<!--Header-->
+<script src="js/jquery.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script>
+	function openNav() {
+		document.getElementById("sidenav").style.width = "300px";
+	}
+
+	function closeNav() {
+		document.getElementById("sidenav").style.width = "0";
+	}
+	$(document).ready(function() {
+		$('.owl-carousel').owlCarousel({
+			items: 6,
+			loop: true,
+			margin: 10,
+			merge: true,
+			responsive: {
+				678: {
+					mergeFit: true
+				},
+				1000: {
+					mergeFit: false
+				}
+			}
+		});
+	})
+</script>
+
+</body>
+</html>

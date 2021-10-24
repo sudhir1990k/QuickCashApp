@@ -1,0 +1,38 @@
+<!--
+ * Created by Sudhir Kumar
+ * License - Free to use -->
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/JavaScript" src="js/login.js"></script>
+    <script type="text/javascript" src="js/databaseHandler.js"></script>
+    <script type="text/javascript" src="js/productHandler.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="app">
+        <div class="shape-circle"></div>
+        <h2 class="page-heading"><span>Login</span><i class="fas fa-sign-in-alt"></i></h2>
+        <div class="login-container">
+            <h3>Login to your accounts</h3>
+            <form>
+                <div class="form-control">
+                    <label for="username"></label><input type="text" id="username" class="username" name="Username" placeholder="Username" required="">
+                </div>
+                <div class="form-control">
+                    <label for="password"></label><input type="password" id="password" class="password" name="Password" placeholder="Password" required="">
+                </div>
+                <input type="submit" class="button-submit" id="mySubmit" onclick="Login(this.form); return false;" value="Login">
+            </form>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
